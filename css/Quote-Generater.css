@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+
+body {
+    background: #bbc6fa;
+}
+
+.Quote-box {
+    background: #fff;
+    inline-size: 700px;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Quote-box h2 {
+    font-size: 32px;
+    margin-block-end: 40px;
+    position: relative;
+}
+
+
+.Quote-box::after {
+    content: '';
+    inline-size: 75px;
+    block-size: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    inset-block-end: 290px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+}
+
+.Quote-box blockquote {
+    font-size: 26px;
+    min-block-size: 110px;
+}
+
+.Quote-box blockquote::before, .Quote-box blockquote::after{
+    content: '"';
+}
+
+
+.Quote-box span {
+    display: block;
+    margin-block-start: 10px;
+    float: right;
+    position: relative;
+}
+
+.Quote-box span::before{
+    content: '';
+    inline-size: 20px;
+    block-size: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: -30px;
+}
+
+
+.Quote-box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Quote-box button {
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.Quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.Quote-box button:nth-child(2){
+    background: transparent;
+    color: #333;
+}

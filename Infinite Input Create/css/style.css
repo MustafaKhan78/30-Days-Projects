@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Glitch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0.3rem;
+    overflow: hidden;
+    
+}
+
+[contenteditable] {
+    border: 2px outset #3333;
+    inline-size: 15%;
+    display: inline-block;
+    block-size: 40px;
+    overflow-y: hidden; 
+    white-space: nowrap;
+    text-wrap: nowrap;
+    resize: none;
+}
